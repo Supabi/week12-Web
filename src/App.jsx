@@ -1,29 +1,21 @@
-import './App.css';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div className="card">
+      <span className="badge">CI/CD PIPELINE ACTIVE</span>
+      <h1>React Web Application</h1>
+      <h2>พัฒนาโดย Supaporn Phongphakt</h2>
+      <p>
+        ระบบอัปเดตหน้าเว็บนี้อัตโนมัติผ่าน <strong>GitHub Actions</strong>, 
+        <strong> Docker Hub</strong> และรันบน <strong>AWS EC2</strong>
+      </p>
+      <div className="status-box">
+        <span className="dot"></span>
+        <span>Deployment Successful & Live</span>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
