@@ -1,6 +1,5 @@
 name: React App CI/CD
 
-# กำหนดให้ Workflow ทำงานเมื่อมีการ Push โค้ดไปยัง Branch 'main'
 on:
   push:
     branches:
@@ -46,13 +45,9 @@ jobs:
             docker run -d --name my-react-app -p 80:80 supapornph/week12web:latest
 ```[cite: 1]
 
----
-
-### **ขั้นตอนการส่งโค้ดขึ้น GitHub เพื่อเริ่ม Deploy:**
-
-1. บันทึกไฟล์ `ci-cd.yml` (`Ctrl + S` หรือ `Cmd + S`)[cite: 26]
-2. คลิกที่ช่อง **Terminal** ด้านล่าง แล้วรันคำสั่งสั่ง Commit และ Push[cite: 1]:
+4. บันทึกไฟล์ (`Ctrl + S`)[cite: 26]
+5. เปิด **Terminal** ด้านล่างแล้วรันคำสั่งสั่ง Commit & Push ใหม่[cite: 1]:
    ```bash
    git add .
-   git commit -m "Add CI/CD pipeline"
+   git commit -m "Fix yaml syntax"
    git push origin main
