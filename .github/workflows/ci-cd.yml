@@ -43,11 +43,3 @@ jobs:
             docker stop my-react-app || true
             docker rm my-react-app || true
             docker run -d --name my-react-app -p 80:80 supapornph/week12web:latest
-```[cite: 1]
-
-4. บันทึกไฟล์ (`Ctrl + S`)[cite: 26]
-5. เปิด **Terminal** ด้านล่างแล้วรันคำสั่งสั่ง Commit & Push ใหม่[cite: 1]:
-   ```bash
-   git add .
-   git commit -m "Fix yaml syntax"
-   git push origin main
